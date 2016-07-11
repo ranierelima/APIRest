@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^/?$ /APIRest/index.php?formato=json [NC,L]
+RewriteRule ^json/?$ /APIRest/index.php?formato=json [NC,L]
+RewriteRule ^json/([0-9]+)/?$ /APIRest/index.php?formato=json&id=$1 [NC,L]
+RewriteRule ^xml/?$ /APIRest/index.php?formato=xml [NC,L]
+RewriteRule ^xml/([0-9]+)/?$ /APIRest/index.php?formato=xml&id=$1 [NC,L]
